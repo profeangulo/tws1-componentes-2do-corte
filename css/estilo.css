@@ -71,6 +71,41 @@ main section#slide-imagenes article.slick-banner figure div.contenedor a:hover {
 
 
 
+/* Galería de Imágenes con FancyApps */
+main section#galeria-imagenes { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#galeria-imagenes article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#galeria-imagenes article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; padding: 70px 0; }
+main section#galeria-imagenes article nav a { width: 250px; height: 250px; margin: 11px; float: none; position: relative; display: inline-block; overflow: hidden; border-radius: 5px; transition: all 0.3s ease-in; }
+main section#galeria-imagenes article nav a img { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; transition: all 0.3s ease-in; }
+main section#galeria-imagenes article nav a:hover { transition: all 0.3s ease-in; }
+main section#galeria-imagenes article nav a:hover img { transform: scale(1.03); filter: saturate(1.5); transition: all 0.3s ease-in; }
+
+
+
+/* Formulario de Contáctenos */
+main section#formulario-contactenos { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#formulario-contactenos article { width: 600px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#formulario-contactenos article form#formu-contacto { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; padding: 70px 0; }
+
+main section#formulario-contactenos article form#formu-contacto input#nombre,
+main section#formulario-contactenos article form#formu-contacto input#correo,
+main section#formulario-contactenos article form#formu-contacto input#telefono { width: 94%; height: auto; display: block; margin: 0 auto 10px; float: none; position: relative; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+
+main section#formulario-contactenos article form#formu-contacto select#asunto { width: 70%; height: auto; display: block; margin: 0 0 10px; float: none; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+main section#formulario-contactenos article form#formu-contacto select#asunto option {  }
+
+main section#formulario-contactenos article form#formu-contacto textarea#mensaje { width: 94%; height: 70px; display: block; margin: 0 auto 10px; float: none; position: relative; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+
+main section#formulario-contactenos article form#formu-contacto input#enviar { width: 150px; height: auto; display: block; margin: 0; float: none; position: relative; border: none; background: #f50; color: #fff; letter-spacing: 0.35em; border-radius: 5px; font-size: 1em; padding: 13px 3%; transition: all 0.3s ease-in; }
+main section#formulario-contactenos article form#formu-contacto input#enviar:hover { background: #333; cursor: pointer; transition: all 0.3s ease-in; }
+
+main section#formulario-contactenos article form#formu-contacto input#nombre:focus,
+main section#formulario-contactenos article form#formu-contacto input#correo:focus,
+main section#formulario-contactenos article form#formu-contacto input#telefono:focus,
+main section#formulario-contactenos article form#formu-contacto textarea#mensaje:focus { outline: none; background: #333; color: #fff; transition: all 0.3s ease-in; }
+
+
+
 /* FOOTER */
 footer { width: 100%; height: 200px; margin: 0; float: none; position: relative; background: url('../img/footer_bg.png') no-repeat top center #333; background-size: cover; }
 
@@ -110,14 +145,33 @@ footer { width: 100%; height: 200px; margin: 0; float: none; position: relative;
     main section#slide-imagenes article.slick-banner figure { height: 60vh; }
     main section#slide-imagenes article.slick-banner figure div.contenedor { width: 60%; margin: 11vh auto; }
     main section#slide-imagenes article.slick-banner figure div.contenedor h3 { font-size: 2em; }
+
+
+    /* Galería de Imágenes con FancyApps */
+    main section#galeria-imagenes article { width: 90%; }
+    main section#galeria-imagenes article nav { padding: 30px 0; }
+    main section#galeria-imagenes article nav a { width: 30%; height: auto; margin: 1.4%; }
+
+
+    /* Formulario de Contáctenos */
+    main section#formulario-contactenos article { width: 80%; }
+    main section#formulario-contactenos article form#formu-contacto select#asunto { width: 100%; }
+}
+
+@media only screen and (max-width: 699px){
+    /* Galería de Imágenes con FancyApps */
+    main section#galeria-imagenes article nav a { width: 48%; margin: 0.5%; }
 }
 
 /* Rango de Smarthphones: (Máximo 499px - Mínimo 400px) */
 @media only screen and (max-width: 499px){
     main section#banner-video-html5-loop-muted video { transform: scale(1.5); }
+
+    
 }
 
 /* Rango de Smarthphones Pequeños: (Máximo 399px - Mínimo 340px) */
 @media only screen and (max-width: 399px){
-    
+    /* Galería de Imágenes con FancyApps */
+    main section#galeria-imagenes article nav a { width: 100%; margin: 0 auto 15px; float: none; display: block; }
 }
